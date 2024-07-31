@@ -1,16 +1,18 @@
 baseURL = "https://invmv.github.io/Notion-Hugo-theme-diary/"
 DefaultContentLanguage = "zh" # Theme's display language, supports: en, fr, zh, zh-hant
 languageCode = "zh-hant"
-title = "A Hugo Site"
-
-copyright = "This is a customized copyright."
 theme = "diary"
 
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
+title = "A Hugo Site"
+copyright = "This is a customized copyright."
 
-# summary
-summaryLength = 0.1
+# RobotsTXT
+enableRobotsTXT = true
+
+#  开启中文、日文、韩文字符识别，默认为 false
+hasCJKLanguage = true
+# summary 
+summaryLength = 100 
 
 # [markup]
 #   [markup.highlight]
@@ -25,15 +27,24 @@ summaryLength = 0.1
 #     tabWidth = 4
 
 # [services]
+#   [services.disqus]
+#     shortname = 'your-disqus-shortname'
 #   [services.googleAnalytics]
 #     ID = 'G-MEASUREMENT_ID'
 
 [params]
-subtitle = "Themed by Diary."
 favicon = "favicon.ico"
+# images = ['site-feature-image.jpg']
+title = "My Blog" # will set 'og:site_name'
+description = "My HomePage Description"  # will set 'og:description'
+subtitle = "Themed by Diary."
 
 enableGitalk = false
 enableGiscus = false
+
+# Twitter Card and Open Graph settings
+enableOpenGraph = true
+enableTwitterCards = true
 
 # Cloudflare Web Analytics
 # cloudflareToken = "your cloudflare web analytics token"
@@ -43,15 +54,6 @@ enableGiscus = false
 
 # Google Search Box
 # googleSearchCode = "Your Search Code"
-
-
-# Twitter Card and Open Graph settings
-enableOpenGraph = true
-enableTwitterCards = true
-title = "My Blog" # will set 'og:site_name'
-description = "My HomePage Description"  # will set 'og:description'
-
-
 
 # [params.gitalk]
 #   owner = "user"
@@ -82,8 +84,8 @@ description = "My HomePage Description"  # will set 'og:description'
 #     crossorigin="anonymous"
 
 [taxonomies]
-   tag = "tags"
-   category = "categories"
+tag = "tags"
+category = "categories"
 
 [[menu.main]]
 url = "/categories"
@@ -101,3 +103,6 @@ weight = 1
 url = "/index.xml"
 name = "RSS Feed"
 weight = 4
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]

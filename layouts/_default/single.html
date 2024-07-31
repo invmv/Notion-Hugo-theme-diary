@@ -22,7 +22,7 @@
 
                     
                     <div class="post-meta">
-                        {{ if .Params.categories }}
+                        {{/*  {{ if .Params.categories }}
                             {{ range .Params.categories }}
                             <a href="{{ "categories" | absURL }}/{{ . | urlize }}">{{ . }}</a>
                             <br>
@@ -34,7 +34,7 @@
                                 <a href="{{ "tags" | absURL }}/{{ . | urlize }}">{{ . }}</a>
                                 &nbsp;
                             {{ end }}
-                        {{ end }}
+                        {{ end }}  */}}
                         {{ if .Site.Params.enableReadingTime }}
                             <i class="material-icons" style="">schedule</i>
                             {{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
