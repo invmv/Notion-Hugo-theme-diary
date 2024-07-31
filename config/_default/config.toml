@@ -10,7 +10,7 @@ theme = "diary"
   home = ["HTML", "RSS", "JSON"]
 
 # summary
-summaryLength = 5
+summaryLength = 70
 
 # [markup]
 #   [markup.highlight]
@@ -30,17 +30,28 @@ summaryLength = 5
 
 [params]
 subtitle = "Themed by Diary."
+favicon = "favicon.ico"
+
 enableGitalk = false
 enableGiscus = false
 
+# Cloudflare Web Analytics
+# cloudflareToken = "your cloudflare web analytics token"
+
 # Microsoft Clarity (https://clarity.microsoft.com/) is a free user behavior recording and analytics tool
 # clarity = "abcdefghzd"
+
+# Google Search Box
+# googleSearchCode = "Your Search Code"
+
 
 # Twitter Card and Open Graph settings
 enableOpenGraph = true
 enableTwitterCards = true
 title = "My Blog" # will set 'og:site_name'
 description = "My HomePage Description"  # will set 'og:description'
+
+
 
 # [params.gitalk]
 #   owner = "user"

@@ -1,1 +1,7 @@
-<script src="{{ absURL "zoom/zoom-vanilla.min.js" }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script>
+<script>
+    // 初始化所有带有 data-action="zoom" 属性的图片
+    mediumZoom('[data-action="zoom"]', {
+      margin: 20
+    });
+  </script>
