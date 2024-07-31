@@ -28,8 +28,6 @@ enableEmoji = true
 #     tabWidth = 4
 
 # [services]
-#   [services.disqus]
-#     shortname = 'your-disqus-shortname'
 #   [services.googleAnalytics]
 #     ID = 'G-MEASUREMENT_ID'
 
@@ -40,6 +38,8 @@ title = "My Blog" # will set 'og:site_name'
 description = "My HomePage Description"  # will set 'og:description'
 subtitle = "Themed by Diary."
 
+
+#disqusShortname = "Shortname"
 enableGitalk = false
 enableGiscus = false
 
