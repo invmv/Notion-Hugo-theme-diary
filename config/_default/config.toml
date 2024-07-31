@@ -6,8 +6,11 @@ title = "A Hugo Site"
 copyright = "This is a customized copyright."
 theme = "diary"
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 # summary
-summaryLength = 50
+summaryLength = 1
 # [markup]
 #   [markup.highlight]
 #     codeFences = true
