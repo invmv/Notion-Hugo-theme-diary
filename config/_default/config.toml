@@ -10,7 +10,7 @@ theme = "diary"
   home = ["HTML", "RSS", "JSON"]
 
 # summary
-summaryLength = 70
+summaryLength = 0.1
 
 # [markup]
 #   [markup.highlight]
@@ -24,9 +24,9 @@ summaryLength = 70
 #     style = "perldoc"
 #     tabWidth = 4
 
-[services]
-  [services.googleAnalytics]
-    ID = 'G-MEASUREMENT_ID'
+# [services]
+#   [services.googleAnalytics]
+#     ID = 'G-MEASUREMENT_ID'
 
 [params]
 subtitle = "Themed by Diary."
