@@ -6,11 +6,9 @@ title = "A Hugo Site"
 copyright = "This is a customized copyright."
 theme = "diary"
 
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-
 # summary
-summaryLength = 1
+summaryLength = 10
+
 # [markup]
 #   [markup.highlight]
 #     codeFences = true
@@ -23,7 +21,10 @@ summaryLength = 1
 #     style = "perldoc"
 #     tabWidth = 4
 
-# googleAnalytics = "UA-123-45"
+[services]
+  [services.googleAnalytics]
+    ID = 'G-MEASUREMENT_ID'
+
 [params]
 subtitle = "Themed by Diary."
 enableGitalk = false
