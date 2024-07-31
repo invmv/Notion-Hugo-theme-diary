@@ -3,7 +3,7 @@
   {{ with .Err }}
     {{ errorf "Failed to download image %s" . }}
   {{ else }}
-    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" {{- with $.Text }} alt="{{ . }}"{{ end -}} {{- with $.Title }} title="{{ . }}"{{ end -}} style="width: auto;height: auto;">
+    <img src="{{ .RelPermalink }}" data-action="zoom" width="{{ .Width }}" height="{{ .Height }}" {{- with $.Text }} alt="{{ . }}"{{ end -}} {{- with $.Title }} title="{{ . }}"{{ end -}} style="width: auto;height: auto;" data-action="zoom">
   {{ end }}
 {{ else }}
   {{ errorf "Invalid image url %q" $url }}
