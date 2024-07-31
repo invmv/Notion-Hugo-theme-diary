@@ -56,8 +56,7 @@ Add a new secret with name `NOTION_TOKEN`, paste the copied token into the secre
 
 ### Duplicate the Notion Template
 
-Duplicate this [Notion Template](https://pcloud.notion.site/Notion-DoIt-04bcc51cfe4c49938229c35e4f0a6fb6
-) into your own workspace.
+Duplicate this https://www.notion.so/HUGO-diary-a94993467b69418da78fa42085e788a8  into your own workspace.
 
 ### Add connection to the Notion Page
 
