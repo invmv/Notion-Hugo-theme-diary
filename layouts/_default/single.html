@@ -23,11 +23,12 @@
                     
                     <div class="post-meta">
                         {{ if .Params.categories }}
+                            {{ range .Params.categories }}
                             {{/*  <i class="material-icons" style="">folder</i>  */}}
                                 {{/*  <a href="{{ "/categories/" | relLangURL }}{{ .Params.categories | urlize }}">{{ .Params.categories }}</a>  */}}
-                                <a href="{{ "categories" | absURL }}/{{ . | urlize }}">{{ . }}</a>
-                                &nbsp;
-                                <br>
+                            <a href="{{ "categories" | absURL }}/{{ . | urlize }}">{{ . }}</a>
+                            <br>
+                            {{ end }}
                         {{ end }}
 
                         {{ if gt .Params.tags 0 }}
