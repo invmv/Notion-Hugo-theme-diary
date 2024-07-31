@@ -109,5 +109,5 @@ home = ["HTML", "RSS", "JSON"]
 
 [permalinks]
   [permalinks.page]
-    posts = '/:title/'
+    posts = '/posts/:title/'
     page = '/:title/'
